@@ -1,0 +1,7 @@
+<%= form_for(:gossip, url: gossip_path, method: :patch) do |f| %>
+  Auteurs: <%= f.text_field :anonymous_author %><br />
+  content: <%= f.text_field :content %><br />
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Clique pour détruire', @gossip, method: :delete %>
